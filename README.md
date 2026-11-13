@@ -20,7 +20,7 @@ The game combines a lightweight rendering and physics system with on-device hand
 
 <p align="center">
   <img src="docs/flight.png" alt="STRATIX gameplay showing the aircraft, mountain environment, obstacles, and score" width="49%">
-  <img src="docs/menu.png" alt="STRATIX main menu" width="49%">
+  <img src="docs/Menu.png" alt="STRATIX main menu" width="49%">
 </p>
 
 <p align="center"><sub>Gameplay and main menu</sub></p>
