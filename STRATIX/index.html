@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0c1520"><meta name="description" content="Fly an alpine sunset route with on-device hand tracking or keyboard and touch controls."><title>STRATIX — AI-Powered Flight Arcade</title><link rel="icon" href="./art/icon.svg"><link rel="manifest" href="./manifest.webmanifest"><link rel="preload" as="image" href="./art/alpine.webp"></head>
+<body><div id="app">
+<main id="deck"><section class="stage" id="stage" aria-label="Flight arcade"><div id="hangar">
+<div class="sky"></div><div class="mist mist-one"></div><div class="mist mist-two"></div><div class="shade"></div>
+<div class="hero-aircraft"><img src="./art/kestrel.webp" alt="Ivory and orange sport aircraft above the alpine valley"><i class="prop"></i></div>
+<div class="home-tools"><button class="square" data-act="mute" aria-label="Mute audio"></button><button class="square" data-act="full" aria-label="Fullscreen"></button></div>
+<div class="hero-content"><img class="hero-wing" src="./art/wing.svg" alt=""><h1><img src="./art/wordmark.svg" alt="STRATIX"></h1><p>AI-POWERED FLIGHT ARCADE</p>
+<nav class="hero-actions" aria-label="Main menu"><button class="primary" data-act="play"></button><button data-act="help"></button><button data-act="scores"></button><button data-act="settings"></button></nav></div>
+<footer class="hangar-foot"><div class="route"><span class="route-icon"></span><span>Alpine Valley</span><i></i><span>Sunset</span></div><button class="best-link" data-act="scores" aria-label="View high scores"><span class="medal"></span>Personal best <b id="record-value">0</b></button></footer></div>
+<canvas id="world" aria-label="Flight area. Press Space, Up, or tap to climb." hidden></canvas>
+<div class="hud" hidden><div class="hud-scores"><span>Score <b id="score">0</b></span><span>Best <b id="best">0</b></span></div><div class="hud-tools"><button class="square" data-act="full" aria-label="Fullscreen"></button><button class="square" data-act="mute" aria-label="Mute audio"></button><button class="square" data-act="pause" aria-label="Pause flight"></button></div></div>
+<div id="tracking" hidden><canvas width="300" height="188" aria-hidden="true"></canvas><span><i></i><span>Hand Not Detected</span></span></div>
+<div id="overlay" hidden></div></section>
+</main></div><script type="module" src="./src/main.ts"></script></body></html>

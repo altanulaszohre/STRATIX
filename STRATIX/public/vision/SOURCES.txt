@@ -1,0 +1,8 @@
+MediaPipe Hand Landmarker, float16 revision 1
+https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task
+SHA-256 fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1
+Model information: https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker
+
+Runtime JS and WASM from @mediapipe/tasks-vision 0.10.22-rc.20250304.
+The development and build scripts copy the locked npm package's runtime here.
+MediaPipe project: https://github.com/google-ai-edge/mediapipe

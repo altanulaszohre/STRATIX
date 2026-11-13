@@ -1,0 +1,18 @@
+{
+  "name": "stratix-flight-arcade",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.18.0" },
+  "scripts": {
+    "dev": "node scripts/vision-assets.mjs && vite",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "build": "node scripts/vision-assets.mjs && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "build:mac": "npm run build && sh macos/build.sh",
+    "test:browser": "node tests/browser.mjs"
+  },
+  "dependencies": { "@mediapipe/tasks-vision": "0.10.22-rc.20250304" },
+  "devDependencies": { "typescript": "5.9.3", "vite": "6.4.3", "playwright-core": "1.56.1", "@fontsource/barlow-condensed": "5.2.7", "@fontsource/barlow": "5.2.7" }
+}
